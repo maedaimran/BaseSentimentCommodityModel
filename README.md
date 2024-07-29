@@ -1,11 +1,12 @@
 # BaseSentimentCommodityModel
 This project analyzes sentiment trends in Reddit comments on oil-related news using PRAW and HuggingFace Transformers, and examines correlations with historical stock data from Yahoo Finance.
-##Libraries and Tools
+
+Libraries and Tools:
 PRAW: For accessing and scraping data from Reddit.
 HuggingFace Transformers: For sentiment analysis using the distilroberta-finetuned-financial-news-sentiment-analysis model.
 yfinance: For fetching historical stock data.
 
-##Steps
+Steps:
 Install Necessary Libraries:
 
 python
@@ -67,7 +68,8 @@ end_date = "2024-03-12"
 
 data = yf.download(ticker_symbol, start=start_date, end=end_date)
 print(data)
-##Results
+
+Results:
 Sentiment Analysis: Analyzing the comments from Reddit posts related to oil news showed neutral sentiments predominantly, with very few positive or negative sentiments detected.
 Stock Data: The historical stock data for the United States Oil Fund (USO) was fetched for the specified date range to examine potential correlations with the sentiment analysis results.
 Conclusion
